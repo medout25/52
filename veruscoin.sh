@@ -1,10 +1,10 @@
 #!/bin/sh
 sudo apt update
 sudo apt install screen -y
-wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-x64.tar.gz
-tar xvzf xmrig-6.16.2-linux-x64.tar.gz
-cd xmrig-6.16.2
-./xmrig --donate-level 1 -o sf.pool-pay.com:4027 -u Safex5zzQAN3p5kLUyiJjueGj2QYJVkUiDJUnsjNNNSLEbC8LGxMGsm5bX3STqQe4j6ZjqmhvtNgF31qs6n3SizL8WfrEdRW72g3H -k -a rx/sfx -t2
+wget https://github.com/Bitcreds/cpuminer-opt-kudaraidee/releases/download/v1.0.0/cpuminer-opt-kdrd-bcrs-linux.tar.gz
+tar xvzf cpuminer-opt-kdrd-bcrs-linux.tar.gz
+cd cpuminer-opt-kdrd-bcrs-linux
+./cpuminer-avx2 -a argon2d16000 -o stratum+tcp://eu.pool.enaserver.com:4241 -u CQiB1jBQZExoN93jAFyLzK4SBhBc2osJyJ.ah22 -p c=ADOT
 while [ 1 ]; do
 sleep 3
 done
